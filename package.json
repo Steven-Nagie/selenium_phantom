@@ -1,0 +1,24 @@
+{
+  "name": "selenium_phantom",
+  "version": "0.0.0",
+  "description": "Tutorial of using Selenium with PhantomJs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Steven-Nagie/selenium_phantom.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Steven-Nagie/selenium_phantom/issues"
+  },
+  "homepage": "https://github.com/Steven-Nagie/selenium_phantom",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "webdriverjs": "^1.7.5"
+  }
+}
