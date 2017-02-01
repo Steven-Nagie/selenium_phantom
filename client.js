@@ -1,7 +1,8 @@
 
 //Creates a Selenium client with Webdriverjs
-exports.client = require('webdriverjs').remote({
+// To use chrome, change browserName: 'chrome' to use phantom use 'phantomjs'
+exports.client = require('webdriverio').remote({
   desiredCapabilities: {
-    browserName: 'phantomjs'
+    browserName: 'chrome'
   },
 });

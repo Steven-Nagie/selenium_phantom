@@ -1,5 +1,4 @@
 const client = require('./client').client,
-      chai = require('chai'),
       expect = require('chai').expect;
 
 
