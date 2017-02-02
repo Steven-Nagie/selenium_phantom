@@ -42,4 +42,16 @@ describe('Test skiutah.com', function() {
     })
   })
 
+  it("should input dropdown value 'Miles to Closest Major Airport'", (done) => {
+    client.click('.js-resort-comparison-select');
+    // For whatever reason it can't find this element.
+    client.click('=Miles to Closest Major Airport');
+    //client.selectOption('.js-resort-comparison-select', 'Miles to Closest Major Airport');
+    client.getTitle((err, title) => {
+      if(err) console.log(err);
+      expect(title).to.have.string("Resort Comparison");
+      done();
+    })
+  })
+
 })
