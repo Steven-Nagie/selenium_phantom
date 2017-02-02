@@ -17,12 +17,10 @@ describe('Test skiutah.com', function() {
   })
 
   it('should see the correct title', (done) => {
-    console.log("Should be grabbing title now");
     client.getTitle((err, title) => {
       if (err) {
         console.log(err);
       }
-      console.log(title);
       expect(title).to.have.string("Ski Utah");
       done();
     })
@@ -38,8 +36,8 @@ describe('Test skiutah.com', function() {
     client.click("=Compare Resorts");
     // client.click(".SuperfishMegaMenu-subLink=Compare Resorts");
     client.getTitle((err, title) => {
-      console.log(title);
-      expect(title).to.have.string("Compare Resorts");
+      if(err) console.log(err);
+      expect(title).to.have.string("Resort Comparison");
       done();
     })
   })
